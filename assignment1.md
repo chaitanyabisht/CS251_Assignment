@@ -4,6 +4,23 @@ The analyzer breaks down the given statements into tokens and tries to give addi
 
 These 8 examples tries to cover all the required programming constructs as required.
 
+# How to use it ?
+
+Compile the .l(Lex) file to .c file using flex
+```
+flex tokenizer.l
+```
+
+Compile the .c file using GCC
+```
+gcc lex.yy.c
+```
+Run the binary
+```
+./a.out
+```
+Give one statement at a time and then press enter, to exit the program press enter twice.
+
 ## Example 1: Declaring an integer
 
 ```
